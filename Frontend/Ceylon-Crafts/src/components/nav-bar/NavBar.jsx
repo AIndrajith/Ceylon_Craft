@@ -60,9 +60,9 @@ const NavBar = () => {
       }}
     >
       {/* Logo */}
-      <div>
+      <Link to={'/'}>
         <img src={assets.logo} className='w-[70px] sm:w-[90px] ml-2 sm:ml-5' alt="Logo" />
-      </div>
+      </Link>
 
       {/* Desktop Navigation */}
       <div className='hidden md:flex gap-8 lg:gap-14 items-center font-hedvigLettersSerif text-base lg:text-lg'>

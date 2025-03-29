@@ -4,12 +4,15 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import { RecoilRoot } from 'recoil'
+import ShopContextProvider from './context/ShopContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
       <StrictMode>
           <RecoilRoot>
-          <App/>
+            <ShopContextProvider>
+              <App/>
+            </ShopContextProvider>
           </RecoilRoot>
       </StrictMode>
   </BrowserRouter>
