@@ -23,9 +23,15 @@ import btf_3 from './btf_3.jpg'
 import customizable from './customizable.png'
 import unique from './unique.png'
 import ap from './affordable_pricing.png'
+import logo1 from './logo1.jpg'
+import whatsapp from './whatsapp.png'
+import facebook from './facebook.png'
+import instagram from './instagram.png'
+import tiktok from './tiktok.png'
 
 export const assets = {
-    logo, cart, login, search, hero_img,customizable,ap,unique
+    logo, cart, login, search, hero_img,customizable,ap,unique,logo1,
+    whatsapp, facebook, instagram, tiktok
 }
 
 export const products = [
