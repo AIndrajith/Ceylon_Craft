@@ -6,12 +6,10 @@ import ViewAllBtn from '../view-all-btn/ViewAllBtn'
 const BestSeller = () => {
   return (
     <div>
-        <GradientBox>
             <div className=''>
             <Title text={'BEST SELLERS'}/>
             <ViewAllBtn/>
             </div>
-        </GradientBox>
     </div>
   )
 }
