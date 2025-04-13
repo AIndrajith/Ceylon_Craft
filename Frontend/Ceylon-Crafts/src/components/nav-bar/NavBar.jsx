@@ -52,7 +52,7 @@ const NavBar = () => {
 
   return (
     <div 
-      className='fixed top-0 left-0 right-0 z-50 flex bg-[#EC9B98]/0 items-center justify-between shadow-xl px-4 sm:px-5 rounded'
+      className='fixed top-0 left-0 right-0 z-50 flex items-center justify-between shadow-xl px-4 sm:px-5 rounded'
       style={{ 
         opacity: scrollOpacity,
         transform: scrollOpacity < 0.1 ? 'translateY(-100%)' : 'translateY(0)',
@@ -65,12 +65,12 @@ const NavBar = () => {
       </Link>
 
       {/* Desktop Navigation */}
-      <div className='hidden md:flex gap-8 lg:gap-14 items-center font-hedvigLettersSerif text-base lg:text-lg'>
+      <div className='hidden md:flex gap-8 lg:gap-14 items-center font-winkySans text-base md:text-lg lg:text-2xl'>
         {navItems.map((item, index) => (
           <NavLink 
             key={index}
             to={item.path}
-            className='text-black hover:text-[#8A2846] hover:-translate-y-1 hover:shadow-xl font-medium'
+            className='text-black hover:text-[#8A2846] hover:-translate-y-1 hover:shadow-xl font-extralight'
           >
             {item.name}
           </NavLink>
@@ -104,7 +104,7 @@ const NavBar = () => {
         {/* Login Button */}
         <button 
           onClick={toggleLoginPopup} 
-          className='flex font-unna gap-2 sm:w-28 md:w-24 w-10 rounded-xl sm:bg-[#D4A6A6] bg-transparent items-center justify-center font-semibold px-3 py-1 text-xl shadow-lg hover:translate-y-1 hover:shadow-xl transition duration-150'
+          className='flex font-winkySans gap-2 sm:w-28 md:w-24 w-10 rounded-xl sm:bg-[#f08d8d] bg-transparent items-center justify-center px-3 py-1 text-lg shadow-lg hover:translate-y-1 hover:shadow-xl transition duration-150'
         >
           <LogIn />
           <span className='hidden sm:inline'>Login</span>
@@ -155,7 +155,7 @@ const NavBar = () => {
 
       {/* Mobile Menu (Overlay) */}
       {isMobileMenuOpen && (
-        <div className='absolute top-full left-0 right-0 md:hidden bg-white shadow-lg z-50 font-hedvigLettersSerif '>
+        <div className='absolute top-full left-0 right-0 md:hidden bg-[#f5dbdb] shadow-lg z-50 font-winkySans '>
           <div className='flex flex-col'>
             {navItems.map((item, index) => (
               <NavLink 

@@ -16,12 +16,8 @@ const LatestCollections = () => {
   
   return (
     <div className=''>
-        
-        <GradientBox>
-        <div className=''>
-          <Title text={'LATEST COLLECTIONS'}/>
+        <Title text={'LATEST COLLECTIONS'}/>
           <ViewAllBtn/>
-        </div>
           {/*Rendering Products */}
           <div className='flex justify-around'>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1 sm:gap-16 md:gap-16 lg:gap-7 pt-16'>
@@ -32,7 +28,6 @@ const LatestCollections = () => {
               }
             </div>
           </div>
-        </GradientBox>
     </div>
   )
 }

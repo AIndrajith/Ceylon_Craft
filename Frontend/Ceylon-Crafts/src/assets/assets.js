@@ -3,6 +3,7 @@ import cart from './cart.png'
 import login from './login.png'
 import search from './search.png'
 import hero_img from './hero_img.jpg'
+import hero_img2 from './hero_img2.png'
 import w_1 from './w_1.jpg'
 import r_1 from './r_1.jpg'
 import r_2 from './r_2.jpg'
@@ -30,7 +31,7 @@ import instagram from './instagram.png'
 import tiktok from './tiktok.png'
 
 export const assets = {
-    logo, cart, login, search, hero_img,customizable,ap,unique,logo1,
+    logo, cart, login, search, hero_img,hero_img2,customizable,ap,unique,logo1,
     whatsapp, facebook, instagram, tiktok
 }
 
