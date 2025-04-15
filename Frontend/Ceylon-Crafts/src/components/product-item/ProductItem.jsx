@@ -7,16 +7,16 @@ const ProductItem = ({product_id,name,price,image}) => {
   return (
     <div className=''>
         <Link className='cursor-pointer' to={`/product/${product_id}`}>
-            <div className='rounded-tl-[50px] rounded-br-[50px] w-[240px] h-[310px] overflow-hidden shadow-lg bg-[#F4C2C2]'>
+            <div className='rounded-tl-[50px] rounded-br-[50px] w-[270px] h-[350px] overflow-hidden shadow-lg bg-[#F4C2C2]'>
               <div className=' relative'>
-                <img className='w-full h-52 object-cover hover:scale-110 transition ease-in-out' src={image[0]} alt="" />
+                <img className='w-full h-56  object-cover hover:scale-110 transition ease-in-out' src={image[0]} alt="" />
               </div>
               <div className='p-3'>
-                <span className='font-winkyRough font-medium text-gray-800 mb-1 text-sm'>{name}</span>
+                <span className='font-winkyRough font-medium text-gray-800 mb-1 text-lg'>{name}</span>
               </div>
               <div className='pb-3 px-3'>
-                <span className='font-hedvigLettersSerif font-bold text-gray-900 text-lg'>{currency}{` `}{price}</span>
-                <span className='text-xs font-winkyRough'>(per flower)</span>
+                <span className='font-hedvigLettersSerif font-bold text-gray-900 text-2xl'>{currency}{` `}{price}</span>
+                <span className='text-sm font-winkyRough'>(per flower)</span>
               </div>
                 
               
