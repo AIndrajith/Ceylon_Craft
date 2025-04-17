@@ -29,10 +29,13 @@ import whatsapp from './whatsapp.png'
 import facebook from './facebook.png'
 import instagram from './instagram.png'
 import tiktok from './tiktok.png'
+import about1 from './about1.jpg'
+import about2 from './about2.jpg'
+import about3 from './about3.jpg'
 
 export const assets = {
     logo, cart, login, search, hero_img,hero_img2,customizable,ap,unique,logo1,
-    whatsapp, facebook, instagram, tiktok
+    whatsapp, facebook, instagram, tiktok, about1, about2, about3
 }
 
 export const products = [
@@ -120,4 +123,5 @@ export const products = [
         color_type: [],
         type: '(per 40 butterflies)'
     },
+    
 ]
