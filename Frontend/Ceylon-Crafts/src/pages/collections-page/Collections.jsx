@@ -179,7 +179,7 @@ const Collections = () => {
     <div>
       <NavBar />
       {/* Adding a div with padding-top to create space for the fixed navbar */}
-      <div className=" pt-20">
+      <div className="">
         <Title text={'ALL COLLECTIONS'} />
       </div>
       <div className='flex flex-col gap-1 pt-10 sm:flex-row sm:gap-10'>
