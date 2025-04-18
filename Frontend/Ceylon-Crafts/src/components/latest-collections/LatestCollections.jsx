@@ -20,7 +20,7 @@ const LatestCollections = () => {
           <ViewAllBtn/>
           {/*Rendering Products */}
           <div className='flex justify-around'>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1 sm:gap-16 md:gap-16 lg:gap-7 pt-16'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-16 md:gap-16 lg:gap-7 md:pt-16 pt-10'>
               {
                 latestProducts.map((item,index)=>(
                   <ProductItem key={index} product_id={item.product_id} image={item.image} name={item.name} price={item.price}/>

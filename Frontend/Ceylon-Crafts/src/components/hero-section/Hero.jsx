@@ -14,14 +14,14 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className='relative h-screen bg-gradient-to-r from-[#F8EEDD] via-[#F8EEDD] to-[#A19A86]'>  
+    <div className='relative h-screen'>  
       <div 
-        className='absolute inset-0 bg-cover bg-center ' 
+        className='absolute inset-0 bg-cover bg-center' 
         style={{backgroundImage: `url(${assets.hero_img2})`}}
       >
         <h2 
           className={`
-            font-bold text-center py-7 font-pacifico text-[#8A2846] pt-40 md:text-5xl sm:text-4xl text-3xl 
+            font-bold text-center font-pacifico text-[#8A2846] md:pt-52 pt-44  lg:text-7xl md:text-6xl text-5xl
             transform transition-all duration-1000 ease-out
             ${animate ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}
           `}
@@ -30,7 +30,7 @@ const Hero = () => {
         </h2>
         <h1 
           className={`
-            font-bold text-center font-poetsenOne text-[#8A2846] md:text-3xl sm:text-2xl text-xl pb-6
+            font-bold text-center font-poetsenOne text-[#8A2846] lg:text-4xl md:text-3xl text-2xl md:py-9 py-6
             transform transition-all duration-1000 ease-out delay-500
             ${animate ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}
           `}
@@ -39,7 +39,7 @@ const Hero = () => {
         </h1>
         <p 
           className={`
-            md:text-lg sm:text-base text-sm font-courgette text-center px-4
+            lg:text-2xl md:text-xl text-lg font-courgette text-center px-4 mb-4
             transform transition-all duration-1000 ease-out delay-700
             ${animate ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}
           `}
@@ -52,7 +52,7 @@ const Hero = () => {
         </p>
         <p 
           className={`
-            py-6 md:text-lg sm:text-base text-sm font-courgette text-center px-4
+            py-7 lg:text-2xl md:text-xl text-lg font-courgette text-center px-4
             transform transition-all duration-1000 ease-out delay-1000
             ${animate ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}
           `}
@@ -61,15 +61,15 @@ const Hero = () => {
         </p>
         <div 
           className={`
-            flex justify-center items-center py-5
+            flex justify-center items-center py-5 text-white
             transform transition-all duration-1000 ease-out delay-[1200ms]
             ${animate ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}
           `}
         >
           <button 
             className='
-              bg-[#f37878] sm:py-2 py-1 sm:px-6 px-3 font-bold rounded-3xl font-courgette
-              hover:-translate-y-1 transition-transform duration-300 sm:text-base md:text-lg text-sm
+              bg-[#f37878] sm:py-2 py-1 sm:px-6 px-3  rounded-3xl font-courgette
+              hover:-translate-y-1 transition-transform duration-300 lg:text-2xl md:text-xl sm:text-lg text-lg
             '
           >
             Shop Now

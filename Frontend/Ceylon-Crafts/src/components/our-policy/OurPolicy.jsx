@@ -3,7 +3,7 @@ import {assets} from '../../assets/assets'
 
 const OurPolicy = () => {
   return (
-    <div className='flex flex-col justify-around font-ubuntu gap-12 py-20 text-xs text-center text-gray-700 sm:flex-row sm:gap-2 sm:text-sm md:text-base p-5'>
+    <div className='flex flex-col justify-center md:justify-around items-center font-winkySans py-20 lg:text-2xl text-center text-gray-700 md:flex-row gap-10 text-lg md:text-xl p-5'>
         <div className='w-80'>
             <img className='w-12 m-auto mb-5' src={assets.customizable} alt="" />
             <span className='font-bold'>100% Customizable</span><br/>
